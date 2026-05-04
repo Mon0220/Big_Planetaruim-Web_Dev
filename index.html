@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--makes the site responsive for different devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Planetarium </title>
+  <!--links the css file-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--background video effect--> 
+   <video class="bg-video" autoplay muted loop playsinline>
+       <source src="./videos/milky-way-gif.mp4" type="video/mp4">
+     </video>
+  <header>
+    <h1>BigPlanetarium</h1>
+    <p>Discover the Milky Way Galaxy</p>
+
+    <!--navigation menu-->
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="planets/planets.html">Planets</a>
+      <a href="solar_system.html">Solar System</a>
+
+    </nav>
+  </header>
+    
+
+  <main>
+
+    <!--intro section-->
+    <section>
+      <h2>Welcome to the Milky Way</h2>
+      <p>
+        The Milky Way is the galaxy that contains our Solar System.
+        It is made up of billions of stars, planets, gas, and dust.
+      </p>
+
+      <!--image-->
+      <img src="./images/milky.way.jpg"
+           alt="A spiral Milky way img">
+    </section>
+
+
+    <!--information section-->
+    <section>
+      <h2>About the Milky Way</h2>
+
+
+      <p>The Milky Way is a spiral galaxy that contains our Solar System. 
+      It is estimated to be around 13.6 billion years old and is made up of hundreds of billions of stars.
+      Our Sun is just one of these stars, located in a region known as the Orion Arm.</p>
+
+      <p>The galaxy also contains planets, gas, dust, and mysterious dark matter that helps hold everything together. 
+      At the centre of the Milky Way lies a supermassive black hole called Sagittarius A*, which has a mass millions of times greater than the Sun.</p>
+
+      <p>Scientists study the Milky Way to better understand how galaxies form and evolve. 
+      By observing stars and planets within it, we can learn more about our place in the universe and how our Solar System came to exist.</p>
+    </section>
+
+    
+    <!--js section-->
+    <section>
+      <h2>Galaxy Explorer</h2>
+      <p>Type a planet name to see how long it takes to orbit the Sun.</p>
+
+      
+      <!--User input-->
+      <label for="planet">Planet name:</label>
+      <input type="text" id="planet" placeholder="e.g. Venus">
+
+      <!--button triggers js funtion-->
+      <button onclick="showOrbitTime()">Show orbit time</button>
+
+      <p id="result" aria-live="polite"></p>
+    </section>
+
+    
+    <!--embedded Youtube video-->
+    <section>
+       <h2>Explore More: The Milky Way</h2>
+
+        <iframe
+       width="560"
+       height="315"
+       src="https://www.youtube.com/embed/V5M_grieetw"
+       title="Milky Way galaxy explanation video"
+       frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+       </iframe>
+
+       </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BigPlanetarium</p>
+  </footer>
+
+  <!--Liks js file-->
+  <script src="scrip.js"></script>
+  
+</body>
+</html>
